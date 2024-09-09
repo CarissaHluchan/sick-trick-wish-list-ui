@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1>Sick Trick Wish List</h1>
-      <Form />
+      <Form addTricks={addTricks}/>
       {!tricks.length && <p>This are no tircks, add some!</p>}
       <AllTricks tricks={tricks}/>
     </div>

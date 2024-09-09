@@ -1,6 +1,6 @@
 import './Form.css';
 
-function Form() {
+function Form({ addTricks }) {
 
 }
 
