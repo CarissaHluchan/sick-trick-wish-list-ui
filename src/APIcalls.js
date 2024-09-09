@@ -14,3 +14,19 @@ export function getTricks() {
         throw err;
     })
 }
+
+export function postTricks() {
+    return fetch('http://localhost:3001/api/v1/tricks', {
+        method: "POST",
+        body: JSON.stringify(newBird),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+    //   .then(data => console.log(data))
+      .catch(err => {
+        console.log(err, 'POST ERR')
+        throw err
+      })
+}
