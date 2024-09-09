@@ -3,6 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getTricks } from '../../APIcalls';
 import AllTricks from '../AllTricks/AllTricks';
+import Form from '../Form/Form'
 
 
 
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1>Sick Trick Wish List</h1>
+      <Form />
       {!tricks.length && <p>This are no tircks, add some!</p>}
       <AllTricks tricks={tricks}/>
     </div>
