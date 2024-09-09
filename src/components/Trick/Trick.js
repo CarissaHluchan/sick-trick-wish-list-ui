@@ -4,7 +4,8 @@ function Trick() {
 
     return (
        <div className='trick-card'>
-            <h2 className='trick-title'></h2>
+            <h2 className='stance'></h2>
+            <p></p>
             <p className='obsticle'>Obstacle:</p>
             <p>Link to Tutorial:</p>
             <a></a>

@@ -5,13 +5,18 @@ function AllTricks({ tricks }) {
 
     const trickCards = tricks.map(trick => {
         return (
-            <Trick />
+            <Trick 
+            stance={trick.stance}
+            name={trick.name}
+            obstacle={trick.obstacle}
+            tutorial={trick.tutorial}
+            />
         )
     })
 
     return (
         <main className='all-tricks-section'>
-            <Trick />
+            {trickCards}
         </main>
     )
 }
