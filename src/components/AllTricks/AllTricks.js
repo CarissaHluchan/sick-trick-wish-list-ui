@@ -4,7 +4,12 @@ import Trick from '../Trick/Trick';
 function AllTricks() {
 
     return (
-        <Trick />
+        <main className='all-tricks-section'>
+            <Trick />
+            <Trick />
+            <Trick />
+            <Trick />
+        </main>
     )
 }
 
