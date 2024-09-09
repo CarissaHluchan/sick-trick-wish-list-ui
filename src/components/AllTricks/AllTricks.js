@@ -5,7 +5,9 @@ function AllTricks({ tricks }) {
 
     const trickCards = tricks.map(trick => {
         return (
-            <Trick 
+            <Trick
+            key={trick.id} 
+            id={trick.id}
             stance={trick.stance}
             name={trick.name}
             obstacle={trick.obstacle}
