@@ -1,14 +1,14 @@
 import './Trick.css';
 
-function Trick() {
+function Trick({ stance, name, obstacle, tutorial}) {
 
     return (
        <div className='trick-card'>
-            <h2 className='stance'></h2>
-            <p></p>
-            <p className='obsticle'>Obstacle:</p>
+            <h2 className='stance'>{stance}</h2>
+            <h3>{name}</h3>
+            <p className='obsticle'>Obstacle: {obstacle}</p>
             <p>Link to Tutorial:</p>
-            <a></a>
+            <a>{tutorial}</a>
        </div>
     )
 }
