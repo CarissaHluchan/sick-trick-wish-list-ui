@@ -18,7 +18,7 @@ export function getTricks() {
 export function postTricks() {
     return fetch('http://localhost:3001/api/v1/tricks', {
         method: "POST",
-        body: JSON.stringify(newBird),
+        body: JSON.stringify(newTrick),
         headers: {
           'Content-Type': 'application/json'
         }
