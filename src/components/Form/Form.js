@@ -2,7 +2,7 @@ import './Form.css';
 import { useState } from 'react';
 
 
-function Form({ addTricks }) {
+function Form({ addTricks, postTricks }) {
 
     const [stance, setStance] = useState('');
     const [name, setName] = useState('');
@@ -58,7 +58,7 @@ function Form({ addTricks }) {
                 onChange={(event) => setTutorial(event.target.value)}
             />
 
-            <button type='submit'>Send it!</button>
+            <button type='submit' onClick={postTricks}>Send it!</button>
         </form>
     )
 }
