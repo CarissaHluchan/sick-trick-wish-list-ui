@@ -1,0 +1,21 @@
+form {
+    width: 75%;
+    height: 20px;
+    margin: 20px;
+    /* border: 2px solid red; */
+}
+
+.stance, .name, .obstacle, .Tutorial, input {
+    width: 150px;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+button {
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
