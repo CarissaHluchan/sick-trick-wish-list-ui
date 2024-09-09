@@ -1,14 +1,13 @@
 import './Trick.css';
-import { Link } from 'react-router-dom';
 
 function Trick() {
 
     return (
-       <div>
-            <h2></h2>
-            <p>Obstacle:</p>
+       <div className='trick-card'>
+            <h2 className='trick-title'>title</h2>
+            <p className='obsticle'>Obstacle:</p>
             <label>Link to Tutorial:</label>
-            <Link></Link>
+            <a>link</a>
        </div>
     )
 }

@@ -1,0 +1,11 @@
+.trick-card {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.trick-title {
+    margin: 0;
+}
