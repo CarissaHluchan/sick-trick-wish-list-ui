@@ -1,6 +1,6 @@
 import './Trick.css';
 
-function Trick({ stance, name, obstacle, tutorial}) {
+function Trick({ stance, name, obstacle, tutorial, key, id}) {
 
     return (
        <div className='trick-card'>
@@ -8,7 +8,7 @@ function Trick({ stance, name, obstacle, tutorial}) {
             <h3>{name}</h3>
             <p className='obsticle'>Obstacle: {obstacle}</p>
             <p>Link to Tutorial:</p>
-            <a>{tutorial}</a>
+            <a href={tutorial}>{tutorial}</a>
        </div>
     )
 }

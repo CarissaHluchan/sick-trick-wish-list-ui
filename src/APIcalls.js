@@ -2,7 +2,7 @@ export function getTricks() {
     return fetch('http://localhost:3001/api/v1/tricks')
     .then(response => {
         if(response.ok) {
-            return response
+            return response.json()
         }
     })
     .then(data => {
