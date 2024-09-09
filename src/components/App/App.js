@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { getTricks } from '../../APIcalls';
+import { getTricks, postTricks } from '../../APIcalls';
 import AllTricks from '../AllTricks/AllTricks';
 import Form from '../Form/Form'
 
@@ -21,6 +21,17 @@ function App() {
         console.log(err, 'ERR HERE!')
       });
   }, []);
+
+    useEffect(() => {
+      postTricks()
+        .then(data => {
+          addTricks(data)
+
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    })
 
   function addTricks(newTrick) {
     setTricks([...tricks, newTrick])
